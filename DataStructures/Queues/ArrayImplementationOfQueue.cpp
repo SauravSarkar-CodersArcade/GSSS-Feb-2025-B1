@@ -47,10 +47,10 @@ class Queue {
             return arr[front];
         }
     }
-    int display(){
+    void display(){
         if(isEmpty()){
             cout << "Queue is empty. Can't display elements...!!!" << endl;
-            return -1;
+            return;
         }
         for (int i=front; i<=rear; i++){
             cout << arr[i] << " ";
